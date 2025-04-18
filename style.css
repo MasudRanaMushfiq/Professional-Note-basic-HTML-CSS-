@@ -1,0 +1,249 @@
+ li {
+    list-style-type: square;
+}
+li {
+    list-style-image: url(pngegg_.png); /*We can use any image as bullet*/
+}
+    li {
+        list-style-position: inside;/*Make bullet a few right position.*/
+    }
+    #first {
+        text-shadow:
+        rgb(102, 18, 219) 0 0 3px,
+        green 4px 4px 10px;
+    } /*Make better formating.*/
+
+    h3, .blue, #first, div b{ color : rgb(230, 2, 203) }/*h3 tag, blue class, first id and tag b in any div is affected.*/
+
+/*  * -> Universal selector.
+    div -> Tag selector.
+    .blue -> Class selector.
+    .blue.red -> A element with blue and red class at same time.
+    .blue  .red -> A .red class element inside a class element .blue
+    #blue -> ID selector.
+    :psudo-clsss -> It select special action of a class to apply like hover.
+    ::psudo-element -> It select some more special sction of class before it. like before, after, first line.
+    :lang(en) -> That match languafe declared with english.
+    div p -> P tag in a div. 
+*/
+
+.blue.red{
+    color:rgb(4, 217, 255)
+}
+.blue .red{
+    color:rgb(130, 4, 255)
+}
+div i{
+    background-color: rgb(178, 115, 238);
+}
+
+.back:hover{
+    background-color: brown;
+}
+
+.must::after{
+    content: "👉 ";
+}
+
+/*  
+    <element attribute>
+
+    element[attribute] {
+    //style here
+    }
+
+    <input type="text">
+
+    input[type="text"] {
+    background-color: lightyellow;
+    }
+
+    div[data-color] {
+        color: red;
+    }
+   <div data-color="red">This will be red</div>
+   <div data-color="green">This will be red</div>
+   <div data-background="red">This will NOT be red</div>
+
+    div span -> Descendant selector (all <span>s that are child a <div> tag)
+    div > span -> Child selector (all <span>s that are a direct child of a <div> tag)
+    a ~ span -> General Sibling selector (all <span>s that are siblings after an <a> tag)
+    a + span -> Adjacent Sibling selector (all <span>s that are immediately after an <a> tag)
+
+*/ 
+
+    h2:last-of-type {/*The last h2 tag is affected.*/
+        background: #f43d00;
+   }
+
+   audio:only-child{
+    background-color: aqua;/*This will affect only direct unique child.*/
+   }
+
+   footer{
+    background-color: rgb(0,0,0);
+    color: aliceblue;
+   }
+   section{
+    background-color: rgba(0,0,0,0.5);/*It use a last 5th perameter for opacity.*/
+   }
+
+   #never, .diagonal-linear-gradient {/*There have many style gradient like radial, rainbow*/
+    background: linear-gradient(to left top, red, yellow 70%);
+   }
+
+   #mind ,warning {
+        background: repeating-linear-gradient(-45deg, blue, blue 10%, green 10%, green 20% );
+    }
+
+    #man {
+        color: white;
+        background-image: url(image.png);
+        background-size: contain;/*Cover will fit to whole screen.*/
+        background-origin: border-box;
+    }
+
+    /* 
+    +---------------------+
+    |     border box      |  ← Includes border, padding, and content
+    |  +-------------+    |
+    |  | padding box |    |  ← Includes padding and content
+    |  | +--------+  |    |
+    |  | |content |  |    |  ← Only the content (text, image, etc.)
+    |  | +--------+  |    |
+    |  +-------------+    |
+    +---------------------+
+    */
+
+    #mydiv {
+        width: 100px;
+        height: 100px;
+        background: url(img_1.jpg) right bottom no-repeat,
+        url(img_2.jpg) left top no-repeat,
+        url(img_3.jpg) right top no-repeat;
+    }
+/* 
+    display: Flex; -> All element are arranged side by side one after another left to right.
+    flex-direction: row-reverse; -> By default display flex is row wise, colum is its reversed option.
+    flex-direction: column; -> This will change main axix to parellel with y axix, reverse of default.
+    flex-wrap: wrap; -> Wrap make element wrap in this container.
+    flex-wrap: wrap-reverse; -> It will change direction from top to bottom to reverse.
+    flew-flow: flex-direction+flex-wrap; -> It is a shortcut of flex-direction and flex-wrap;
+    flex-wrap: column nowrap; -> Example of flex-wrap.
+    justify-content: flex-start; -> It is default. Start from left to right. 
+    justify-content: flex-end; -> It change default direction of flex-start. Start flex from right to left.
+    justify-content: space-around; -> >ake equall space around each element.
+    justify-content: space-between; -> Make left right side attached to border and other element are justified between them.
+    justify-content: space-evenly; -> It make equall space in left, right and between them. 
+    
+    Items are those content who make change with whole group, each row wise group are items. 
+    
+    align-item: stretch; -> Make equall size of each item to max item size.
+    
+    order: 1; -> We can make order custom using order property.
+    flex-grow: 0; -> Default is content size;
+    flex-grow: 1; -> Make each size to strength and fit to wrap size.
+    flex-shrink: 1; -> By default it is 1, it make shrink of content size if window is shrink. 
+    flex-basis: 200px; -> It is better property of min size when wrap is on, min width is overflow when screen size is less 
+    than a single content size, but using basis, it make shrink even it less than min width, make it more responsive.
+    flex: grow shrink basis; -> Short form of above 3 property.
+
+*/ 
+    body {
+        box-sizing: border-box; /*It calculate border and padding with content, but content-box will add border and padding with the content size.*/
+    }
+
+/* 
+    when margin have two value, it mean first value is top & bottom and second value mean left & right.
+    But if it has three value, they mean top, left & right, bottom. 
+     border-bottom-left-radius: 100px 10px; -> This will make border less round to left but more 10 time to top.
+*/
+
+    #bord {
+        border: 5px solid red;
+        border-image: linear-gradient(to right, red 20%, green 20%, green 40%, blue 40%, blue 60%, maroon
+    60%, maroon 80%, chocolate 50%); /* gradient with required colors */
+        border-image-slice: 1;
+    }
+
+    /* The most basic use of a float is having text wrap around an image. */
+    spans {
+        font: bold 20px Arial, sans-serif;
+    }
+
+    div { direction: ltr; /* Default, text read read from left-to-right */}
+    .ex {direction: rtl; /* text read from right-to-left */}
+    
+    /* -webkit- is used as prefix of some property to proper apply so that they are also supported by old browser. */
+
+    #myfirstdiv {
+        font-weight: bold !important; /* This property won't be overridden by the rule below */
+    }
+       
+    /*  Use different unite size like em, rem, vw, vh to auto adjust font size.  
+        z-index: 2; -> It make the element at 2nd position from back. 1 value is the most bottom. 
+
+        We can use filter as blur, brightness, contrast, grayscale, saturate, opacity to any content or image. 
+        You can use different cursore style like hand, text, pointer, wait, not allow. 
+        
+        */
+    .item:before {
+        content: counter(item-counter, upper-roman) ". "; /* by specifying the upper-roman as style the output would be in roman numbers */
+    }
+    /* 
+        CSS Variables allow authors to create reusable values which can be used throughout a CSS document.That means you can create a variable for color and after use the variale.
+        We can create any variable for color, string, path, source.
+        --bg_color: yellow;
+        --width: 10;
+        --logo-url: 'logo';
+        --logo-url: 'assets/img/logo.png';
+    */
+
+    /* Single element shape make a visual shape using only html css not any image. 
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid blue;
+        }
+    */
+
+    /* 
+        We can create many column using multi-column or column-width.
+        Clipping means you're cutting out part of an element, so only a certain shape or area is visible — the rest is hidden. 
+        Masking is like putting a stencil or template over an element — the parts covered by the mask shape are visible, and the rest are hidden or transparent. 
+        We can make clipping and masking to make style in css. 
+    */
+    #dipp {
+    width: 300px;
+    height: 200px;
+    background: url(image.png);
+    mask-image: radial-gradient(circle farthest-side at center, transparent 49%, white 50%);
+    /*You can clip and mask any image to any shape*/
+    }
+
+
+    /* 
+        Object fit means that how a element will fit with the box. 
+        Property like fit, calm-down, cover.
+
+        We can use different prefix to support in old browser.
+        -webkit- for chrome or safari
+        -moz-  for firefox
+        -ms-  internet explorer 
+    */
+
+
+
+
+
+
+
+
+
+
+
+       
+
+

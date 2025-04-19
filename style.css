@@ -2,7 +2,7 @@
     list-style-type: square;
 }
 li {
-    list-style-image: url(pngegg_.png); /*We can use any image as bullet*/
+    list-style-image: url(Images/pngegg.png); /*We can use any image as bullet*/
 }
     li {
         list-style-position: inside;/*Make bullet a few right position.*/
@@ -98,7 +98,7 @@ div i{
 
     #man {
         color: white;
-        background-image: url(image.png);
+        background-image: url(Images/image.png);
         background-size: contain;/*Cover will fit to whole screen.*/
         background-origin: border-box;
     }
@@ -118,9 +118,9 @@ div i{
     #mydiv {
         width: 100px;
         height: 100px;
-        background: url(img_1.jpg) right bottom no-repeat,
-        url(img_2.jpg) left top no-repeat,
-        url(img_3.jpg) right top no-repeat;
+        background: url(Images/img_1.jpg) right bottom no-repeat,
+        url(Images/img_2.jpg) left top no-repeat,
+        url(Images/img_3.jpg) right top no-repeat;
     }
 /* 
     display: Flex; -> All element are arranged side by side one after another left to right.
@@ -218,7 +218,7 @@ div i{
     #dipp {
     width: 300px;
     height: 200px;
-    background: url(image.png);
+    background: url(Images/image.png);
     mask-image: radial-gradient(circle farthest-side at center, transparent 49%, white 50%);
     /*You can clip and mask any image to any shape*/
     }

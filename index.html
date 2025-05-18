@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- HTML REVISION BY ME IN MAY 2025  --> 
 
 <!DOCTYPE html> <!-- Declares the document type and version (HTML5) for the browser -->
@@ -29,10 +30,34 @@
         second or third font. If no of these are found, then default "sans-serif" will be applied. -->
         <br> <!-- insert a single line break -->
         <p class="back">Here have <mark>some</mark>content.</p> <!-- Highlight text between mark tag -->
+=======
+<!DOCTYPE html> <!--it shows document type version-->
+<html lang="en"> <!--Specify website main language-->
+    <head>
+        <meta charset="UTF-8"> <!--make SEO with meta data-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--It is importent to set viewport for auto adjust monitor.-->
+        <meta name="author" content="Dave Gray"> <!--This specify the author and content for search engin.-->
+        <meta name="description" content="The official website for The Little Taco Shop">
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <meta name="mobile-web-app-capable" content="yes"> <!--This make website as mobile view for less wide screen.-->
+        <link rel="stylesheet" href="style.css"><!--You can add many stylesheet in a html page.-->
+        
+        <!-- <meta http-equiv="refresh" content="5;url=https://www.example.com/" /> --><!--This will auto go to exmaple website after 5 second of main page load.-->
+        <title>Hello!</title>
+        </head> 
+
+    <body style="margin: 80px;">
+        <h1 id="first">Hellow World!</h1> <!-- most important heading, SEO use it -->
+        <h6 class="must">Hellow World!</h6> <!-- least important heading -->
+        <p style="color: red; font-family: 'Lucida Sans';">This is a simple paragraph.</p>  
+        <br> <!-- insert a single line break -->
+        <p class="back">Here have <mark>some</mark>content.</p> <!-- highlighted text -->
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         <div>
             <b>Bold Text</b>
         </div>
 
+<<<<<<< HEAD
         <!--Semantic HTML means using HTML tags that clearly describe their meaning and purpose both for the browser and for developers (and screen 
         readers, search engines, etc.). Here sementic = meaningfull -->
 
@@ -43,10 +68,16 @@
             <em class="red"> This is like strong tag than bold tag.</em> <!--জোর দেওয়া-->
         <!--It tells the browser (and screen readers) that this text should be emphasized. By default, browsers show <em> text in italic style. 
         <em> = italic + meaning (emphasis)-->
+=======
+        <strong class="blue red">Strong is also bold text bt importent thsn bold tag.</strong>
+        <div class="blue">
+            <em class="red"> This is like strong tag than bold tag.</em>
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         </div>
         <div>
             <i>It is normlal italic tag.</i>
         </div>
+<<<<<<< HEAD
         
         <p>This paragraph contains some <u>mispelled</u> text.</p> <!-- underline text--> 
         <p> I like to write <abbr title="Hyper Text Markup Language">HTML</abbr> in website.</p> 
@@ -75,10 +106,34 @@
         <a href="/page">Relative path to internal page</a><br>
         <a href="http://example.com/page">Absolute URL to page</a> <!--Both are the same, go to this relative page link.--><br>
         <a href="tel:+8801521790019">On click, it will go to dial this number</a><br>
+=======
+        <p>This paragraph contains some <u>mispelled</u> text.</p> <!-- underline-->
+        <p> I like to write <abbr title="Hyper Text Markup Language">HTML</abbr> in website.</p>
+        <ins>New Text</ins><br>
+        <del>Deleted Text</del><br>
+        <s>Struck-through text here</s> <br>
+        <p>My name <sup>superscript here</sup></p>
+        <p>My name <sub>subscript here</sub></p>
+
+        <hr>
+        
+        <a href="http://example.com/">Link to example.com</a> <!--hypertext reference--><br>
+        <a href="http://example.com/" rel="external">Provide extra info about link.</a><br>
+        <a href="ftp://example.com/">You also can specify the protocol of site other than http. </a><br>
+        
+        <h2 id="Topic1">First topic</h2><!--Anchors can be used to jump to specific tags position on an HTML page.-->
+        <a href='#Topic1'>Click to jump to the position where Topic1 is located.</a><br>
+        <a href='rand.html#Topic1'>Click to jump to the position where Topic2 is located in page rand.html</a><br><br>
+
+        <a href="/page">Text Here</a><br>
+        <a href="http://example.com/page"> Also Text Here</a> <!--Both are the same, go to this relative page link.--><br>
+        <a href="tel:+8801521790019">On click it will go to dial this number</a><br>
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         <a href="mailto:useremailaddress">Send email</a><br>
         <a href="mailto:example@example.com?subject=Example+subject&body=Message+text">Send email with customized subject and body.</a><br>
         <a href="example.com" target="_blank">It will open new tab or window as blank.</a><!--but for using it has hack issue--><br><br>
 
+<<<<<<< HEAD
         <a href="javascript:myFunction();">Run the JS function using link tag.</a><br>
         <!--Create clickable link, instead of linking to a webpage, it runs JavaScript code, call the function when click. Less used in modern HTML and JS --> 
         <a href="#" onclick="myFunction(); return false;">Run Code with tag href="#</a><br><br>
@@ -93,12 +148,21 @@
             <li>Item</li>
             <li value="5">Another Item</li> <!--It will force this order list again start from 5.-->
             <li>Yet Another Item</li>
+=======
+        <a href="javascript:myFunction();">Run the Code using link tag.</a><br>
+        <a href="#" onclick="myFunction(); return false;">Run Code</a>
+
+        <ol start="2"> <!--It will start number from 3. You can also use <ol reversed> for reverse order. -->
+            <li>Item</li>
+            <li value="5">Another Item</li> <!--It will force this order list from 6.-->
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
             <li>Yet Another Item</li>
         </ol>
 
         <ol type="A"> <!--type="1/a/A/i/I"> for number or abc or ABC or i,ii,ii or I,II,II....-->
             <li>Hello, list 1</li>
             <li>Hello, list 2</li>
+<<<<<<< HEAD
             <li>
                 Hello, list 3
                 <ul>
@@ -112,12 +176,29 @@
             <dt>title 1</dt> <!--Description Term like Title-->
                 <dt>title 2</dt>
                 <dd>value for 1 and 2</dd> <!--Description details, give details about the title, means the value. -->
+=======
+            <li>Hello, list 3</li>
+            <ul>
+                <li>Hello, nested list 4</li>
+                <li>Hello, nested list 5</li>
+            </ul>
+        </ol>
+
+        <dl> <!--Description list (or definition list created with dl-->
+            <dt>title 1</dt>
+                <dt>title 2</dt>
+                <dd>value for 1 and 2</dd>
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
             <dt>title 3</dt>
                 <dd>value for 3</dd>
                 <dd>value for 3</dd>
         </dl>
 
+<<<<<<< HEAD
         <table border="1"> 
+=======
+        <table border="1"> <!--Rowspan specifies the number of rows spanned by a cell-->
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
             <caption>Table Caption</caption> 
             <thead>
                 <tr>
@@ -131,7 +212,10 @@
                     <td colspan="3">This second row spans all three columns</td>
                 </tr>
                 <tr>
+<<<<<<< HEAD
                     <!--Rowspan specifies the number of rows spanned(marged) by a cell--> 
+=======
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
                     <th rowspan="2" scope="row">This cell spans two rows</th><!--Using scope row or column you can make any row or column as heading-->
                     <td>row 3 col 2</td>
                     <td>row 3 col 3</td>
@@ -149,6 +233,7 @@
 
         <div class="class1 class2"></div> <!--For multiple class separate the class names with spaces.-->
 
+<<<<<<< HEAD
         <script src="path/to.js"></script><!--it is better to add script at last for speed html load-->
         <script src="path/to.js" async></script><!--script is loaded after html load, not peraller. use it when script is not necessary for html.-->
         <noscript>Show when JavaScript is disabled</noscript><!--Show this text when script is disabled or not supported in browser.-->
@@ -165,6 +250,22 @@
 
         
         <fieldset id="man"> <!--Form input with fieldsets-->
+=======
+        <script src="path/to.js"></script><!--it is better to add script at last for spped html load-->
+        <script src="path/to.js" async></script><!--script is loaded after html load, not peraller. use it when script is not necessary for html.-->
+        <noscript>JavaScript disabled</noscript><!--Show this text when script is disabled or not supported in browser.-->
+
+        <link rel="stylesheet" href="to.css"><!--Place it in head for showing style html while loading not after html unstyled loaded.-->
+
+        <img src="hello.png" alt="Hello World"><!--Hellow World will show when image cannot displayed.-->
+        
+        <!--Alt-text is used by screen readers for visually impaired users and by search engines. It's therefore important to
+        write good alt-text for your images.-->
+        
+        <!--An image maps is an image with clickable areas that usually act as hyperlinks.-->
+
+        <fieldset id="man">
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
             <legend>Theme color:</legend>
             <p>
                 <input type="radio" name="color" id="red" value="#F00">
@@ -179,6 +280,7 @@
                 <label for="blue">Blue</label>
             </p>
         </fieldset>
+<<<<<<< HEAD
         
         <!-- Number Input, Range Input, File Input -->
         <input type="number" size="8" name="marks" min="0" max="5" placeholder="Increament" />
@@ -191,10 +293,22 @@
         <!--Here you can restrict the input file like image, audio, video or document. title shows when user hover, it give notice to upload this specifit type file. -->
 
         <!-- Simple Form -->
+=======
+        <div id="mydiv">
+
+        </div>
+               
+        <input type="number" size="6" name="marks" min="0" max="5" placeholder="Increament" />
+        <label for="feedback">Feedback Range:</label>
+        <input type="range" id="feedback" size="2" name="feedback" min="1" max="50" title="Provide feedback on a scale of 1 to 50"/><br><br>
+        <input type="file" accept="image/*" title="Only images are allowed">
+
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         <form>
             <input type="text" name="name" placeholder="text" required>
             <input type="email" name="email" placeholder="email" required>
             <input pattern="\d*" name="number" placeholder="number" required>
+<<<<<<< HEAD
             <!--Pattern Explanation:
                 1. \d+           → Only digits, one or more (e.g., 123, 4567)
                 2. [A-Za-z]+     → Only letters (uppercase or lowercase), no numbers or symbols (e.g., Masud, Hello)
@@ -209,10 +323,16 @@
         </form> <br>
         
         <input type="color" name="favcolor" value="#148A01" placeholder="Color">
+=======
+            <input type="submit" value="Publish"> <!-- form will be validated -->
+        </form> <br>
+        <input type="color" name="favcolor" value="#148A01" placeholder="color">
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         <input type="password" name="password" placeholder="Password"><br><br>
 
         <input type="button" onclick="alert('hello world!')" value="Click Me"><br>
         <input type="datetime-local" placeholder="text"/><br>
+<<<<<<< HEAD
         <hr><br>
 
 
@@ -222,11 +342,20 @@
         <fieldset id="mind">
             <p><label>Meeting time: <input type=datetime name="meeting.start"></label>
                 <!--Groups related form elements together. Often used to wrap inputs under the same category. Adds a visual box by default in browsers. -->
+=======
+        
+        <fieldset id="mind">
+            <p><label>Meeting time: <input type=datetime name="meeting.start"></label>
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         </fieldset>
 
         <form id="never">
             <fieldset><!--It is a container to encapsulate all form in a field set.-->
+<<<<<<< HEAD
             <legend>1st field set:</legend> <!--It provides a caption for the grouped and accelibities for user and screen readers. -->
+=======
+            <legend>1st field set:</legend>
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
                 Field one:<br>
                 <input type="text" placeholder="text"><br>
                 Field two:<br>
@@ -235,7 +364,11 @@
             <input type="submit" value="Submit">
         </form>
 
+<<<<<<< HEAD
         <nav><!--Used to group a section of navigation links and Helps search engines and screen readers understand which part of the page is for navigation. -->
+=======
+        <nav><!--Used for Nav Bar-->
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
             <a href="https://google.com">Google</a>
             <a href="https://www.yahoo.com">Yahoo!</a>
             <a href="https://www.bing.com">Bing</a>
@@ -252,14 +385,23 @@
             </footer>
         </article>
 
+<<<<<<< HEAD
         <section id="bord">
             <!--This container represents a generic section to thematically group content, improve SEO and screen reader. -->
             <!-- Every section, typically, should be able to be identified with a heading element as a child of the section. -->
+=======
+        <section id="bord"><!--This container represents a generic section to thematically group content-->
+            <!-- . Every section, typically, should be able to be identified with a heading element as a child of the section. -->
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
             <h3>Chapter One</h3>
             <p>...</p>
         </section><br>
 
+<<<<<<< HEAD
         <form action="/login" method="POST"> <!--Simple form with labels and POST method. -->
+=======
+        <form action="/login" method="POST"> <!--Simple form with labels-->
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
             <label for="username">Username:</label>
             <input id="username" type="text" name="username" />
             <label for="pass">Password:</label>
@@ -267,7 +409,10 @@
             <input type="submit" name="submit" />
         </form> <br>
 
+<<<<<<< HEAD
         <!-- Multimedia -->
+=======
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         <audio controls>
             <source src="music.mp3" type="audio/mpeg">
            Your browser does not support the audio element.
@@ -279,19 +424,30 @@
         </video><br>
         
         <progress value="40" max="100"></progress>
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         <select name="" title="text"><!--You can change size of view of option.-->
             <option value="1">One</option>
             <option value="2" selected>Two</option><!--This option is selected as default.-->
                 <optgroup label="Three">
+<<<<<<< HEAD
                 <!--Groups related options under a label. Adds visual organization (e.g., “Three” is a label, and its children are 3.1 and 3.2).-->
+=======
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
                 <option value="banana">3.1</option>
                 <option value="strawberry">3.2</option>
                 </optgroup>
             <option value="4">Four</option>
         </select>
 
+<<<<<<< HEAD
         <input id="yes" list="Languages" placeholder="Select Language">
         <!--Provides a list of predefined options for an <input> element. Users can type freely, but also see autocomplete suggestions based on the <option> values. -->
+=======
+        <input style="border-radius: 10px;" list="Languages" placeholder="select">
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         <datalist id="Languages">
             <option value="PHP">
             <option value="Perl">
@@ -300,15 +456,26 @@
             <option value="C++">
         </datalist><br>
 
+<<<<<<< HEAD
         <embed type="video/mp4" src="video1.mp4" width="200" height="50"><br>
         <!--It provides integration point for an external non-HTML content. -->
         
         <iframe title="inframe" src="https://dailyamardesh.com/national/amdssr0bk7ble" id="inframe"></iframe>
         <!-- It is Inline Frame, used to include another page in your page as small frame where the link will freely execute and show independently.-->
+=======
+        <embed type="video/mp4" src="video0.mp4" width="300" height="50"><br>
+        <!--It provides integration point for an external non-HTML content. -->
+        
+        <iframe src="https://dailyamardesh.com/national/amdssr0bk7ble" width="700" height="400"></iframe>
+        <!-- It is Inline Frame, used to include another page in your page as small frame.-->
+        <p lang="en">This English sentence contains the German word <span lang="de">Hallo</span>.</p>
+        <!-- You can use many language in anywhere like this in div, section. -->
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         
         <!-- SVG can be write as inline SVG, external SVG or styling using html or css. -->
         <!-- Canvas is used to create graphics in html -->
         
+<<<<<<< HEAD
 
         <h2>--------------------- Fourth Section -------------------</h2>
         
@@ -319,12 +486,17 @@
 
         <pre><!--Preformatted Text, Displays text exactly as typed. -->
             <code><!--This make same as code write in  code editor. Semantically mark up computer code. Typically shown in a monospaced font. -->
+=======
+        <pre><!--This make same as code write in editor.-->
+            <code>
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
             x = 42
             if x == 42:
             print "x is … … 42"
             </code>
         </pre>
 
+<<<<<<< HEAD
         <p id="no">She wrote <q>The answer is 42.</q> and everyone agreed.</p><!--Code between p tag is preview as quote.-->
         
         <blockquote cite="https://www.exampleblog.com/articles/meaning-of-life">
@@ -335,11 +507,21 @@
         <hr><br>
         <button tabindex="-1">This button will not be reachable by tab</button>
         <!--Using tabindex different values like 1,2 or others you can make more custome access a module with tab. -->
+=======
+        <p style="color: blue;">She wrote <q>The answer is 42.</q> and everyone agreed.</p><!--Code between p tag is preview as quote.-->
+        
+        <blockquote cite="http://example.com/blog/hello-world">
+            <p>The answer is 42.</p>
+        </blockquote>
+        <hr><br>
+        <button tabindex="-1">This button will not be reachable by tab</button>
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         
         <p contenteditable>
             This is an editable paragraph.
             <span contenteditable="false">But not this.</span>
         </p>
+<<<<<<< HEAD
         <input type="text" placeholder=" &#128269; Search"/> <!--Here placeholder value is an icon. -->
         <b>&copy;&#174;</b><!--There have many special charecter like this in html, this is the way to show them.-->
         
@@ -362,10 +544,28 @@
             <!--Here figcaption give a caption to the figure.-->
         </figure>
 
+=======
+        <input type="text" placeholder=" &#128269; Search"/>
+        <b>&copy;&#174;</b><!--There have many special charecter like this in html.-->
+        
+        <div role="alertdialog">
+            <h1>Warning</h1>
+            <div role="alert">Your session will expire in 60 seconds.</div>
+        </div>
+
+        <!-- An element whose implicit native "role" semantics will not be mapped to the accessibility API.-->
+        <button role="button">Add</button>
+        <input type="checkbox" title="checkbox" role="checkbox" aria-checked="false">
+        <figure role="img">
+            <img alt="A cute cat." src="albert.jpg">
+            <figcaption>This is my cat, Albert.</figcaption>
+        <figure>
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         <div role="document">
             <h1>The Life of Albert Einstein</h1>
             <p>Lorem ipsum...</p>
         </div>
+<<<<<<< HEAD
         
         <h1 role="heading">Introduction</h1>
         <!--Role is user for better understand to user, SEO and screen reader, though some role is not use now, to replace them many modern method have already introduced. -->
@@ -376,11 +576,24 @@
         
         <img role="math" alt="y=mx+b" src="slope.png"><br><br>
         <progress role="progressbar" value="25" max="100" title="Progress: 25 percent">25%</progress>        
+=======
+        <h1 role="heading">Introduction</h1>
+        <div id="dipp">
+            <p>Hi</p>
+        </div>
+        <img role="math" alt="y=mx+b" src="slope.png"><br><br>
+        <progress role="progressbar" value="25" max="100">25%</progress>
+        <!--Role is like id or class but more idetible or noticable by browser and coder.-->
+        
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         
 
     </body>
 </html>
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136

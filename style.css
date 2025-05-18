@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* CSS REVISION BY ME IN MAY 2025 */
 
 body { margin: 50px; }
@@ -9,7 +8,7 @@ li {
 }
 
 li { list-style-position: inside;/*Make bullet a few right position.*/ }
-
+ 
 #yes { border-radius: 5px; }
 #no { color: blue; }
 #rolestyle { color: red; }
@@ -31,26 +30,6 @@ h3, .blue, #first, div b{ color : rgb(230, 2, 203) }/*h3 tag, blue class, first 
 
 /*
     * -> Universal selector.
-=======
- li {
-    list-style-type: square;
-}
-li {
-    list-style-image: url(Images/pngegg.png); /*We can use any image as bullet*/
-}
-    li {
-        list-style-position: inside;/*Make bullet a few right position.*/
-    }
-    #first {
-        text-shadow:
-        rgb(102, 18, 219) 0 0 3px,
-        green 4px 4px 10px;
-    } /*Make better formating.*/
-
-    h3, .blue, #first, div b{ color : rgb(230, 2, 203) }/*h3 tag, blue class, first id and tag b in any div is affected.*/
-
-/*  * -> Universal selector.
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
     div -> Tag selector.
     .blue -> Class selector.
     .blue.red -> A element with blue and red class at same time.
@@ -59,27 +38,12 @@ li {
     :psudo-clsss -> It select special action of a class to apply like hover.
     ::psudo-element -> It select some more special sction of class before it. like before, after, first line.
     :lang(en) -> That match languafe declared with english.
-<<<<<<< HEAD
     div p -> It Indicate P tag in a div. 
 */ 
 
 .blue.red{ color:rgb(4, 217, 255) }
 .blue .red{ color:rgb(130, 4, 255) }
 div i{ background-color: rgb(178, 115, 238); }
-=======
-    div p -> P tag in a div. 
-*/
-
-.blue.red{
-    color:rgb(4, 217, 255)
-}
-.blue .red{
-    color:rgb(130, 4, 255)
-}
-div i{
-    background-color: rgb(178, 115, 238);
-}
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
 
 .back:hover{
     background-color: brown;
@@ -89,19 +53,11 @@ div i{
     content: "👉 ";
 }
 
-<<<<<<< HEAD
 /* 
     <element attribute>
 
     element[attribute] {
         //style here
-=======
-/*  
-    <element attribute>
-
-    element[attribute] {
-    //style here
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
     }
 
     <input type="text">
@@ -113,36 +69,21 @@ div i{
     div[data-color] {
         color: red;
     }
-<<<<<<< HEAD
 
     <div data-color="red">This will be red</div>
     <div data-color="green">This will be red</div>
     <div data-background="red">This will NOT be red</div>
-=======
-   <div data-color="red">This will be red</div>
-   <div data-color="green">This will be red</div>
-   <div data-background="red">This will NOT be red</div>
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
 
     div span -> Descendant selector (all <span>s that are child a <div> tag)
     div > span -> Child selector (all <span>s that are a direct child of a <div> tag)
     a ~ span -> General Sibling selector (all <span>s that are siblings after an <a> tag)
     a + span -> Adjacent Sibling selector (all <span>s that are immediately after an <a> tag)
-<<<<<<< HEAD
 */ 
 
 
     h2:last-of-type {
         background: #f43d00; /* The last h2 tag is affected. */ 
     }
-=======
-
-*/ 
-
-    h2:last-of-type {/*The last h2 tag is affected.*/
-        background: #f43d00;
-   }
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
 
    audio:only-child{
     background-color: aqua;/*This will affect only direct unique child.*/
@@ -152,10 +93,6 @@ div i{
     background-color: rgb(0,0,0);
     color: aliceblue;
    }
-<<<<<<< HEAD
-
-=======
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
    section{
     background-color: rgba(0,0,0,0.5);/*It use a last 5th perameter for opacity.*/
    }
@@ -164,11 +101,7 @@ div i{
     background: linear-gradient(to left top, red, yellow 70%);
    }
 
-<<<<<<< HEAD
     #mind ,warning {
-=======
-   #mind ,warning {
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
         background: repeating-linear-gradient(-45deg, blue, blue 10%, green 10%, green 20% );
     }
 
@@ -198,12 +131,8 @@ div i{
         url(Images/img_2.jpg) left top no-repeat,
         url(Images/img_3.jpg) right top no-repeat;
     }
-<<<<<<< HEAD
 
     /*
-=======
-/* 
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
     display: Flex; -> All element are arranged side by side one after another left to right.
     flex-direction: row-reverse; -> By default display flex is row wise, colum is its reversed option.
     flex-direction: column; -> This will change main axix to parellel with y axix, reverse of default.
@@ -229,11 +158,7 @@ div i{
     than a single content size, but using basis, it make shrink even it less than min width, make it more responsive.
     flex: grow shrink basis; -> Short form of above 3 property.
 
-<<<<<<< HEAD
 */
-=======
-*/ 
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
     body {
         box-sizing: border-box; /*It calculate border and padding with content, but content-box will add border and padding with the content size.*/
     }
@@ -304,10 +229,7 @@ div i{
     width: 300px;
     height: 200px;
     background: url(Images/image.png);
-<<<<<<< HEAD
     -webkit-mask-image: radial-gradient(circle farthest-side at center, transparent 49%, white 50%);
-=======
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
     mask-image: radial-gradient(circle farthest-side at center, transparent 49%, white 50%);
     /*You can clip and mask any image to any shape*/
     }
@@ -323,20 +245,5 @@ div i{
         -ms-  internet explorer 
     */
 
-<<<<<<< HEAD
  
-=======
-
-
-
-
-
-
-
-
-
-
-       
-
->>>>>>> 637bc3b1bd61cb39b2c9da19262fe8de77432136
 
